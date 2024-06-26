@@ -6,47 +6,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
 
-    <!-- <link href="stlye.css" rel="stylesheet" type="text/css" /> -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/contact">Contact</a></li>
-      </ul>
-      <ul>
-        <li><a href="/login">Login</a></li>
-        <li><a href="/register">sign up</a></li>
-      </ul>
+  <body class="m-0 h-screen w-screen">
+    <nav class="w-screen flex border-b-2 p-2">
+      <a href="/" class="nav-link">Home</a>
+      <a href="/about">About</a>
+      <a href="/contact">Contact</a>
+      <a href="/login" class="ml-auto">Login</a>
+      <a href="/register">sign up</a>
     </nav>
-    <div class="main"></div>
-    <footer>
-      <div class="footer__container">
-        <div class="footer__content">
-          <h3>Footer</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-            pulvinar risus non risus hendrerit venenatis. Quisque non elit id
-            purus feugiat vestibulum. Phasellus eget sodales nisl. Donec gravida
-            id neque nec hendrerit. In hac habitasse platea dictumst.
-          </p>
+    <div class="main h-screen"></div>
+
+    <footer class="relative top-0 w-screen p-2 bg-gray-300">
+      <div class="flex flex-col justify-center w-screen">
+        <div class="flex flex-row w-screen">
+          <div class="flex flex-col flex-auto">
+            <div class="flex justify-start">
+              <h2><b>Bean & Brew</b></h2>
+            </div>
+            <div class="flex flex-row">
+              <div class="links flex justify-center">
+                <div class="p-2">
+                  <ul>
+                    <li>
+                      <a href="/"
+                        ><h2><b>Home</b></h2></a
+                      >
+                    </li>
+                    <li><a href="/about">About us</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="/mission-statment">Our mission</a></li>
+                  </ul>
+                </div>
+                <div class="p-2">
+                  <ul>
+                    <li>
+                      <a href="/restraunt"
+                        ><h2><b>Restraunt</b></h2></a
+                      >
+                    </li>
+                    <li><a href="/restraunt/reservations">reservations</a></li>
+                    <li><a href="/restraunt/menu">Menu</a></li>
+                  </ul>
+                </div>
+                <div class="p-2">
+                  <ul>
+                    <li>
+                      <a href="/coffee"
+                        ><h2><b>Coffee Shop</b></h2></a
+                      >
+                    </li>
+                    <li><a href="/coffee/order">Order coffee</a></li>
+                    <li><a href="/coffee/menu">Menu</a></li>
+                  </ul>
+                </div>
+                <div class="p-2">
+                  <ul>
+                    <li>
+                      <a href="/bakery"
+                        ><h2><b>Bakery</b></h2></a
+                      >
+                    </li>
+                    <li><a href="/bakery/order">Order</a></li>
+                    <li><a href="/bakery/menu">Menu</a></li>
+                    <li><a href="/bakery/book">Book lesson</a></li>
+                  </ul>
+                </div>
+                <div class="p-2">
+                  <ul>
+                    <li>
+                      <a href="/account"
+                        ><h2><b>Account</b></h2></a
+                      >
+                    </li>
+                    <!-- login or dashboard-->
+                    <li><a href="/signup">Sign-up</a></li>
+                    <li><a href="/login">Login</a></li>
+                    <li><a href="/dashboard">Account dashboard</a></li>
+                  </ul>
+                </div>
+                <div class="p-2">
+                  <ul>
+                    <li><a href="/terms">Terms</a></li>
+                    <li><a href="/privacy">Privacy</a></li>
+                    <li><a href="/cookies">Cookies</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col flex-auto">
+            <div class="h-10">
+              <!-- social links -->
+            </div>
+            <div class="p-2">
+              <ul>
+                <li>
+                  <a href="/contact"
+                    ><h2><b>Contact</b></h2></a
+                  >
+                </li>
+                <li><a href="/contact/email">Email</a></li>
+                <li><a href="/contact/phone">Phone</a></li>
+                <li><a href="/contact/address">Address</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="footer__content">
-          <h3>Links</h3>
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/contact">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer__content">
-          <h3>Connect</h3>
-          <ul>
-            <li><a href="/login">Login</a></li>
-            <li><a href="/register">Sign up</a></li>
-          </ul>
+        <div class="p-2 w-screen flex justify-center">
+          <p>&copy; 2024 Dylan and Dylan. All rights reserved</p>
         </div>
       </div>
     </footer>
