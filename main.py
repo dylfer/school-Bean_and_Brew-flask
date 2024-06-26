@@ -3,7 +3,7 @@ import mysql.connector
 import os
 
 
-app = Flask("app",
+app = Flask(__name__,
             static_folder='web/static',
             template_folder='web/templates',)
 
@@ -131,20 +131,20 @@ def dashboard():
 
 
 @app.route('/api/login', methods=['POST'])
-def login():
+def login_auth():
     # ToDo handle it 
 
     return redirect("/dashboard")
 
 @app.route('/api/register', methods=['POST'])
-def register():
+def register_auth():
     # ToDo handle it  
     # set tokens for login auth
 
     return redirect("/dashboard")
 
 @app.route('/api/logout', methods=['POST'])
-def logout():
+def logout_auth():
     # ToDo handle it 
 
     return redirect("/login")
