@@ -65,10 +65,10 @@ class DataBace:
 
   def insertColoum(self):
     pass
-7
+
 
   
-DB = DataBace()
+# DB = DataBace()
 
 
 
