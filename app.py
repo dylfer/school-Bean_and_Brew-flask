@@ -1,11 +1,11 @@
-from flask import Flask, render_template, redirect
+from flask import Flask, render_template, redirect, url_for, request
 import mysql.connector
 import os
 
 
 app = Flask(__name__,
             static_folder='web/static',
-            template_folder='web/templates',)
+            template_folder='web/templates')
 
 
 
@@ -108,6 +108,7 @@ def page_not_found(e):
 
 @app.route('/')
 def home():
+    print(url_for('static', filename='style.css'))
     return render_template('index.html')
 
 
