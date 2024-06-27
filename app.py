@@ -108,7 +108,6 @@ def page_not_found(e):
 
 @app.route('/')
 def home():
-    print(url_for('static', filename='style.css'))
     return render_template('index.html')
 
 
